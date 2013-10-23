@@ -531,8 +531,8 @@ slowlog-max-len <%= @conf_slowlog_max_len %>
 # Hashes are encoded using a memory efficient data structure when they have a
 # small number of entries, and the biggest entry does not exceed a given
 # threshold. These thresholds can be configured using the following directives.
-hash-max-zipmap-entries <%= @conf_hash_max_zipmap_entries %>
-hash-max-zipmap-value <%= @conf_hash_max_zipmap_value %>
+hash-max-ziplist-entries <%= @conf_hash_max_ziplist_entries %>
+hash-max-ziplist-value <%= @conf_hash_max_ziplist_value %>
 
 # Similarly to hashes, small lists are also encoded in a special way in order
 # to save a lot of space. The special representation is only used when
