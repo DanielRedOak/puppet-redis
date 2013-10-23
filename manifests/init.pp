@@ -85,6 +85,7 @@ class redis (
   $conf_client_output_buffer_limit_pubsub = '32mb 8mb 60',
   $conf_hz                                = '10',
   $conf_aof_rewrite_incremental_fsync     = 'yes',
+  $conf_tcp_keepalive                     = '0',
 ) {
 
   include redis::params
